@@ -1,0 +1,15 @@
+section {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: darkgreen;
+}
+
+li {
+  display: inline;
+  margin: 30px;
+}
+ul {
+  margin: 20px 0px;
+}
