@@ -18,11 +18,64 @@
         </ul>
       </nav>
     </header>
-    <section id="player-actions">
-      <h3>Player's Actions</h3>
-      <button type="button" disabled>Hit</button>
-      <button type="button">Stand</button>
-      <button type="button">Split</button>
-    </section>
+    <main style="padding: 20px; text-align: center">
+      <section id="betting" class="hidden" style="margin-bottom: 20px">
+        <h3>Place Your Bet!</h3>
+        <p>
+          Your Bankroll:
+          <span
+            id="bankroll-display"
+            style="font-weight: bold; font-size: 1.2em"
+          ></span>
+        </p>
+
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          style="width: 200px; margin: 10px auto"
+        >
+          <input
+            class="mdl-textfield__input"
+            type="number"
+            pattern="-?[0-9]*"
+            id="users-wager"
+          />
+          <label class="mdl-textfield__label" for="users-wager"
+            >Your Wager (whole dollars)</label
+          >
+          <span class="mdl-textfield__error">Input is not a whole number!</span>
+        </div>
+        <br />
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="makeWager()"
+        >
+          Bet
+        </button>
+      </section>
+
+      <section id="player-actions" style="margin-bottom: 20px">
+        <h3>Player's Actions</h3>
+        <button
+          type="button"
+          disabled
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+        >
+          Hit
+        </button>
+        <button
+          type="button"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+        >
+          Stand
+        </button>
+        <button
+          type="button"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+        >
+          Split
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
